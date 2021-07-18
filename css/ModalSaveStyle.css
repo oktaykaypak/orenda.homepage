@@ -1,0 +1,35 @@
+.saveModalContainer {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 150px;
+    z-index: 1029;
+}
+
+@keyframes slideModal {
+    100% {
+        right: 0px;
+    }
+}
+
+@-webkit-keyframes slideModal {
+    100% {
+        right: 0px;
+    }
+}
+
+.Content {
+    width: 100%;
+    position: absolute;
+    top: 20;
+    right: -300px;
+    background-color: #db1f7d;
+    border-radius: 5px 0 0 5px;
+    animation: slideModal 1s ease-in-out forwards;
+}
+
+.Modaltext {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}

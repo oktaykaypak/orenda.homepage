@@ -1,0 +1,54 @@
+.tagName {
+    padding: 5px 8px;
+    margin: 5px 5px;
+    text-decoration: none;
+    border: 1px solid;
+    transition-duration: 0.5s;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tagName:hover {
+    animation: animate 3s linear infinite;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.tagyHiza {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagyCont {
+    width: 1000px;
+    border: 1px solid #e2e6eb;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+@media(max-width:1199px) {
+    .tagyCont {
+        width: 98.5%;
+        border: 1px solid #e2e6eb;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    .tagyHiza {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
